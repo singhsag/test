@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
-export function App(props) {
+function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -44,3 +44,5 @@ export function App(props) {
     </div>
   );
 };
+
+export default App;
